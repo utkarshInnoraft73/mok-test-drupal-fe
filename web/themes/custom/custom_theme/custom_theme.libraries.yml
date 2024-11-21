@@ -1,0 +1,4 @@
+movie-view-styling:
+  css:
+    theme:
+      css/style.css: {}

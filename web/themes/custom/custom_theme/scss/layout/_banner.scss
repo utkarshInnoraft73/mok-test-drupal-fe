@@ -1,0 +1,32 @@
+/**
+ * @file SCSS to design the banner on the /movie page.
+ */
+ 
+@use "./../importer" as *;
+@use "./../base/mixin";
+
+.carousel-item{
+  &__text{
+    transform: translate(0px, -260px);
+    h5{
+      @include sub-texts($brand-secondary-color, Montserrate-Regular, "2.5rem");
+      margin: 2rem 0;
+    }
+    p{
+      @include sub-texts($brand-secondary-color, Montserrate-italic, "2rem");
+      text-transform: capitalize;
+      font-weight: 100;
+    }
+    &--button{
+      margin-top:2rem;
+      text-decoration: none;
+      border: 2px solid $brand-secondary-color;
+      text-transform: uppercase;
+      padding: 1rem 1.3rem;
+      @include sub-texts($brand-secondary-color, Montserrate-Regular, "1rem");
+    }
+  }
+}
+button.active{
+  background-color:red !important;
+}

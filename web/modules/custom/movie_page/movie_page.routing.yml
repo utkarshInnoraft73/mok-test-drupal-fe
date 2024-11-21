@@ -1,0 +1,6 @@
+movie_page.example:
+  path: '/movie'
+  defaults:
+    _controller: '\Drupal\movie_page\Controller\MoviePageController::build'
+  requirements:
+    _permission: 'Access content'
