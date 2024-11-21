@@ -1,0 +1,54 @@
+uuid: 758cb876-dde5-4c46-bc2e-4b9d3ca7bf13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.movie.body
+    - field.field.node.movie.field_movie_thumnail
+    - field.field.node.movie.field_release_date
+    - image.style.movie_thumnail
+    - node.type.movie
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.movie.default
+targetEntityType: node
+bundle: movie
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_movie_thumnail:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: movie_thumnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_release_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

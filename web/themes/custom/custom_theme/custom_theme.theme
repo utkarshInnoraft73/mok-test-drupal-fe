@@ -1,0 +1,14 @@
+<?php
+/**
+ * @file Implementing hooks for theme.
+ */
+
+
+/**
+ * Implementing hook_preprocess_HOOK();
+ */
+function custom_theme_preprocess_page(array &$variables) {
+  if(\Drupal::routeMatch()->getRouteName() == "movie_page.example"){
+    $variables['route_name']= 'movie_page';
+  }
+}

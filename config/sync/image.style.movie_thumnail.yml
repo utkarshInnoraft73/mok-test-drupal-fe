@@ -1,0 +1,14 @@
+uuid: ba26921e-b784-4572-9918-962e5751dd16
+langcode: en
+status: true
+dependencies: {  }
+name: movie_thumnail
+label: 'Movie thumnail'
+effects:
+  52950ca3-f535-46fb-a55c-657dab854e5c:
+    uuid: 52950ca3-f535-46fb-a55c-657dab854e5c
+    id: image_resize
+    weight: 1
+    data:
+      width: 300
+      height: 250

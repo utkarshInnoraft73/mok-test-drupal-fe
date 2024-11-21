@@ -1,0 +1,5 @@
+name: 'movie_page'
+type: module
+description: 'This is show the movie page'
+package: Custom
+core_version_requirement: ^10 || ^11
