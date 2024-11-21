@@ -1,0 +1,14 @@
+name: mok-test-drupal-fe
+recipe: drupal10
+config:
+  webroot: web
+  php: 8.3
+  via: nginx
+services:
+  node:
+    type: node
+    globals:
+      gulp-cli: latest
+tooling:
+  npm:
+    service: node
